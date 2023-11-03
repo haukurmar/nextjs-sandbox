@@ -1,7 +1,7 @@
 {
-  "name": "ui",
+  "name": "@noba/users",
   "version": "0.0.0",
-  "main": "./index.tsx",
+  "main": "index.ts",
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
