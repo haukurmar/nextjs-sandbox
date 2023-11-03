@@ -6,6 +6,7 @@ export default function HomePage() {
 		<main>
 			<h2>Users</h2>
 			<Suspense fallback={"Loading users..."}>
+				{/* @ts-expect-error Server Component */}
 				<UserList />
 			</Suspense>
 		</main>
