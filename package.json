@@ -11,5 +11,8 @@
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.6.10",
-  "name": "nextjs-sandbox"
+  "name": "nextjs-sandbox",
+  "dependencies": {
+    "next": "^14.0.1"
+  }
 }
