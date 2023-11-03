@@ -5,11 +5,13 @@ import { Dialog, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, Cog6ToothIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { NavigationItem } from "../webLayoutTypes";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const teams = [
-	{ id: 1, name: "Heroicons", href: "#", initial: "H", current: false },
-	{ id: 2, name: "Tailwind Labs", href: "#", initial: "T", current: false },
-	{ id: 3, name: "Workcation", href: "#", initial: "W", current: false },
+	{ id: 1, name: "Heroicons", href: "#", initial: "H" },
+	{ id: 2, name: "Tailwind Labs", href: "#", initial: "T" },
+	{ id: 3, name: "Workcation", href: "#", initial: "W" },
 ];
 const userNavigation = [
 	{ name: "Your profile", href: "#" },
@@ -26,8 +28,13 @@ type ScaffoldProps = {
 };
 
 export function Scaffold(props: ScaffoldProps) {
+	const pathName = usePathname();
 	const { navigationItems } = props;
 	const [sidebarOpen, setSidebarOpen] = useState(false);
+
+	const isCurrentRoute = (href: string) => {
+		return href === pathName;
+	};
 
 	return (
 		<>
@@ -92,10 +99,10 @@ export function Scaffold(props: ScaffoldProps) {
 													<ul role="list" className="-mx-2 space-y-1">
 														{navigationItems.map((item) => (
 															<li key={item.name}>
-																<a
+																<Link
 																	href={item.href}
 																	className={classNames(
-																		item.current
+																		isCurrentRoute(item.href)
 																			? "bg-gray-800 text-white"
 																			: "text-gray-400 hover:text-white hover:bg-gray-800",
 																		"group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold",
@@ -105,7 +112,7 @@ export function Scaffold(props: ScaffoldProps) {
 																		{item.icon}
 																	</i>
 																	{item.name}
-																</a>
+																</Link>
 															</li>
 														))}
 													</ul>
@@ -117,10 +124,10 @@ export function Scaffold(props: ScaffoldProps) {
 													<ul role="list" className="-mx-2 mt-2 space-y-1">
 														{teams.map((team) => (
 															<li key={team.name}>
-																<a
+																<Link
 																	href={team.href}
 																	className={classNames(
-																		team.current
+																		isCurrentRoute(team.href)
 																			? "bg-gray-800 text-white"
 																			: "text-gray-400 hover:text-white hover:bg-gray-800",
 																		"group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold",
@@ -130,7 +137,8 @@ export function Scaffold(props: ScaffoldProps) {
 																		{team.initial}
 																	</span>
 																	<span className="truncate">{team.name}</span>
-																</a>
+																	{team.href}
+																</Link>
 															</li>
 														))}
 													</ul>
@@ -173,10 +181,10 @@ export function Scaffold(props: ScaffoldProps) {
 									<ul role="list" className="-mx-2 space-y-1">
 										{navigationItems.map((item) => (
 											<li key={item.name}>
-												<a
+												<Link
 													href={item.href}
 													className={classNames(
-														item.current
+														isCurrentRoute(item.href)
 															? "bg-gray-800 text-white"
 															: "text-gray-400 hover:text-white hover:bg-gray-800",
 														"group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold",
@@ -186,7 +194,7 @@ export function Scaffold(props: ScaffoldProps) {
 														{item.icon}
 													</i>
 													{item.name}
-												</a>
+												</Link>
 											</li>
 										))}
 									</ul>
@@ -196,10 +204,10 @@ export function Scaffold(props: ScaffoldProps) {
 									<ul role="list" className="-mx-2 mt-2 space-y-1">
 										{teams.map((team) => (
 											<li key={team.name}>
-												<a
+												<Link
 													href={team.href}
 													className={classNames(
-														team.current
+														isCurrentRoute(team.href)
 															? "bg-gray-800 text-white"
 															: "text-gray-400 hover:text-white hover:bg-gray-800",
 														"group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold",
@@ -209,7 +217,7 @@ export function Scaffold(props: ScaffoldProps) {
 														{team.initial}
 													</span>
 													<span className="truncate">{team.name}</span>
-												</a>
+												</Link>
 											</li>
 										))}
 									</ul>

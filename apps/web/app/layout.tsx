@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 };
 
 const navigation: NavigationItem[] = [
-	{ name: "Dashboard", href: "/", icon: <HomeIcon />, current: true },
-	{ name: "Users", href: "/users", icon: <UsersIcon />, current: false },
-	{ name: "Projects", href: "#", icon: <FolderIcon />, current: false },
-	{ name: "Calendar", href: "#", icon: <CalendarIcon />, current: false },
-	{ name: "Documents", href: "#", icon: <DocumentDuplicateIcon />, current: false },
-	{ name: "Reports", href: "#", icon: <ChartPieIcon />, current: false },
+	{ name: "Dashboard", href: "/", icon: <HomeIcon /> },
+	{ name: "Users", href: "/users", icon: <UsersIcon /> },
+	{ name: "Projects", href: "#", icon: <FolderIcon /> },
+	{ name: "Calendar", href: "#", icon: <CalendarIcon /> },
+	{ name: "Documents", href: "#", icon: <DocumentDuplicateIcon /> },
+	{ name: "Reports", href: "#", icon: <ChartPieIcon /> },
 ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {

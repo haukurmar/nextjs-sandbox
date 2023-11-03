@@ -4,7 +4,6 @@ export type NavigationItem = {
 	name: string;
 	href: string;
 	icon: ReactNode;
-	current: boolean;
 };
 
 export type HeroIconType = ForwardRefExoticComponent<
