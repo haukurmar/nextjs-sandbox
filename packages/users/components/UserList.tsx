@@ -1,11 +1,19 @@
-import { ReactNode } from "react";
+import { fetchUsers } from "../data-layer";
 
-type UserListProps = {
-	children?: ReactNode;
-};
+type UserListProps = {};
 
-const UserList = (props: UserListProps) => {
-	return <div>Users</div>;
+const UserList = async (props: UserListProps) => {
+	const users = await fetchUsers();
+	return (
+		<div>
+			<h2>Users</h2>
+			<ul>
+				{users.map((user) => (
+					<li key={user.id}>{user.firstName}</li>
+				))}
+			</ul>
+		</div>
+	);
 };
 
 export { UserList };
