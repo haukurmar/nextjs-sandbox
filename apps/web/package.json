@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "pnpm locale && next dev",
+    "build": "pnpm locale && next build",
+    "start": "pnpm locale && next start",
+    "lint": "next lint",
+    "locale": "i18nexus pull"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
@@ -28,6 +29,7 @@
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "autoprefixer": "^10.4.16",
+    "i18nexus-cli": "^3.3.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
     "tsconfig": "workspace:*",

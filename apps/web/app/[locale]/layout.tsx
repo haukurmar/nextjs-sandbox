@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font";
 import { NavigationItem, Scaffold } from "@noba/web-layout";
-import "./globals.css";
+import "../globals.css";
 import {
 	CalendarIcon,
 	ChartPieIcon,
