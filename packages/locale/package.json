@@ -8,12 +8,12 @@
     "locale": "i18nexus pull -p assets/locales"
   },
   "devDependencies": {
-    "@types/node": "^20.5.2",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
+    "i18nexus-cli": "^3.3.0",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.2",
-    "i18nexus-cli": "^3.3.0"
+    "typescript": "^4.9.5"
   },
   "dependencies": {
     "i18next": "^23.10.1",
