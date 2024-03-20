@@ -55,6 +55,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@app/locale':
+        specifier: workspace:*
+        version: link:../../packages/locale
       '@headlessui/react':
         specifier: ^1.7.17
         version: 1.7.17(react-dom@18.2.0)(react@18.2.0)
@@ -70,12 +73,6 @@ importers:
       geist:
         specifier: ^1.0.0
         version: 1.0.0
-      i18next:
-        specifier: ^23.10.1
-        version: 23.10.1
-      i18next-resources-to-backend:
-        specifier: ^1.2.0
-        version: 1.2.0
       next-i18n-router:
         specifier: ^5.3.1
         version: 5.3.1
@@ -85,9 +82,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      react-i18next:
-        specifier: ^14.1.0
-        version: 14.1.0(i18next@23.10.1)(react-dom@18.2.0)(react@18.2.0)
       ui:
         specifier: workspace:*
         version: link:../../packages/ui
@@ -107,9 +101,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.31)
-      i18nexus-cli:
-        specifier: ^3.3.0
-        version: 3.3.0
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -121,6 +112,46 @@ importers:
         version: link:../../packages/tsconfig
       typescript:
         specifier: ^4.5.3
+        version: 4.9.5
+
+  packages/locale:
+    dependencies:
+      i18next:
+        specifier: ^23.10.1
+        version: 23.10.1
+      i18next-resources-to-backend:
+        specifier: ^1.2.0
+        version: 1.2.0
+      next-i18n-router:
+        specifier: ^5.3.1
+        version: 5.3.1
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-i18next:
+        specifier: ^14.1.0
+        version: 14.1.0(i18next@23.10.1)(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      '@types/node':
+        specifier: ^20.5.2
+        version: 20.8.10
+      '@types/react':
+        specifier: ^18.2.0
+        version: 18.2.34
+      '@types/react-dom':
+        specifier: ^18.2.0
+        version: 18.2.14
+      i18nexus-cli:
+        specifier: ^3.3.0
+        version: 3.3.0
+      tsconfig:
+        specifier: workspace:*
+        version: link:../tsconfig
+      typescript:
+        specifier: ^4.5.2
         version: 4.9.5
 
   packages/tsconfig: {}

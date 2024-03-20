@@ -1,0 +1,28 @@
+{
+  "name": "@app/locale",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "locale": "i18nexus pull -p assets/locales"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.2",
+    "i18nexus-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "i18next": "^23.10.1",
+    "i18next-resources-to-backend": "^1.2.0",
+    "next-i18n-router": "^5.3.1",
+    "react-i18next": "^14.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

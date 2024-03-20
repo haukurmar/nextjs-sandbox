@@ -1,5 +1,5 @@
 import Link from "next/link";
-import initTranslations from "../../i18n-init.server";
+import { initTranslations } from "@app/locale";
 
 export default async function HomePage({ params: { locale } }): Promise<JSX.Element> {
 	const { t } = await initTranslations(locale, ["common", "home"], null, null);
