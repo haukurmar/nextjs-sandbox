@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font";
+import { GeistSans } from "geist/font/sans";
 import { NavigationItem, Scaffold } from "@noba/web-layout";
 import "../globals.css";
 import {
@@ -10,6 +10,7 @@ import {
 	HomeIcon,
 	UsersIcon,
 } from "@heroicons/react/24/outline";
+import { dir, i18nConfig, i18nNamespaces, initTranslations, TranslationsProvider } from "@app/locale";
 
 export const metadata: Metadata = {
 	title: "Create Turborepo",
@@ -25,11 +26,18 @@ const navigation: NavigationItem[] = [
 	{ name: "Reports", href: "#", icon: <ChartPieIcon /> },
 ];
 
-export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
+export function generateStaticParams() {
+	return i18nConfig.locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({ children, params: { locale } }): Promise<JSX.Element> {
+	const { t, resources } = await initTranslations(locale, i18nNamespaces, null, null);
 	return (
-		<html lang="en" className="h-full bg-white">
+		<html lang={locale} dir={dir(locale)} className="h-full bg-white">
 			<body className={`${GeistSans.className} h-full`}>
-				<Scaffold navigationItems={navigation}>{children}</Scaffold>
+				<TranslationsProvider locale={locale} namespaces={i18nNamespaces} resources={resources}>
+					<Scaffold navigationItems={navigation}>{children}</Scaffold>
+				</TranslationsProvider>
 			</body>
 		</html>
 	);

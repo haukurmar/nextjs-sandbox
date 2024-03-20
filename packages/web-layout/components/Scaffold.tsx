@@ -7,6 +7,7 @@ import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/20/solid"
 import { NavigationItem } from "../webLayoutTypes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LanguageChanger } from "@app/locale";
 
 const teams = [
 	{ id: 1, name: "Heroicons", href: "#", initial: "H" },
@@ -272,6 +273,8 @@ export function Scaffold(props: ScaffoldProps) {
 									<span className="sr-only">View notifications</span>
 									<BellIcon className="h-6 w-6" aria-hidden="true" />
 								</button>
+
+								<LanguageChanger />
 
 								{/* Separator */}
 								<div className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-900/10" aria-hidden="true" />
