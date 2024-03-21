@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

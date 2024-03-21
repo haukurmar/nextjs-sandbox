@@ -1,0 +1,19 @@
+{
+  "name": "@app/assets",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "locale": "i18nexus pull -p locales"
+  },
+  "devDependencies": {
+    "i18nexus-cli": "^3.3.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+  }
+}
