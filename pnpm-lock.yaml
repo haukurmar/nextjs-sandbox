@@ -24,6 +24,9 @@ importers:
 
   apps/docs:
     dependencies:
+      '@app/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       next:
         specifier: ^14.1.4
         version: 14.1.4(react-dom@18.2.0)(react@18.2.0)
@@ -33,9 +36,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
     devDependencies:
       '@types/node':
         specifier: ^20.11.30
@@ -53,23 +53,26 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
 
-  apps/web:
+  apps/web-i18n:
     dependencies:
+      '@app/layout':
+        specifier: workspace:*
+        version: link:../../packages/layout
       '@app/locale':
         specifier: workspace:*
         version: link:../../packages/locale
+      '@app/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      '@app/users':
+        specifier: workspace:*
+        version: link:../../packages/users
       '@headlessui/react':
         specifier: ^1.7.18
         version: 1.7.18(react-dom@18.2.0)(react@18.2.0)
       '@heroicons/react':
         specifier: ^2.1.1
         version: 2.1.1(react@18.2.0)
-      '@noba/users':
-        specifier: workspace:*
-        version: link:../../packages/users
-      '@noba/web-layout':
-        specifier: workspace:*
-        version: link:../../packages/web-layout
       geist:
         specifier: ^1.2.2
         version: 1.2.2(next@14.1.4)
@@ -82,9 +85,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
     devDependencies:
       '@tailwindcss/forms':
         specifier: ^0.5.7
@@ -110,6 +110,43 @@ importers:
       tsconfig:
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      typescript:
+        specifier: ^4.9.5
+        version: 4.9.5
+
+  packages/layout:
+    dependencies:
+      '@headlessui/react':
+        specifier: ^1.7.18
+        version: 1.7.18(react-dom@18.2.0)(react@18.2.0)
+      '@heroicons/react':
+        specifier: ^2.1.1
+        version: 2.1.1(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@app/locale':
+        specifier: workspace:*
+        version: link:../locale
+      '@turbo/gen':
+        specifier: ^1.12.5
+        version: 1.12.5(@types/node@20.11.30)(typescript@4.9.5)
+      '@types/node':
+        specifier: ^20.11.30
+        version: 20.11.30
+      '@types/react':
+        specifier: ^18.2.67
+        version: 18.2.67
+      '@types/react-dom':
+        specifier: ^18.2.22
+        version: 18.2.22
+      tsconfig:
+        specifier: workspace:*
+        version: link:../tsconfig
       typescript:
         specifier: ^4.9.5
         version: 4.9.5
@@ -197,43 +234,6 @@ importers:
       react:
         specifier: ^18.2.0
         version: 18.2.0
-      tsconfig:
-        specifier: workspace:*
-        version: link:../tsconfig
-      typescript:
-        specifier: ^4.9.5
-        version: 4.9.5
-
-  packages/web-layout:
-    dependencies:
-      '@headlessui/react':
-        specifier: ^1.7.18
-        version: 1.7.18(react-dom@18.2.0)(react@18.2.0)
-      '@heroicons/react':
-        specifier: ^2.1.1
-        version: 2.1.1(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@app/locale':
-        specifier: workspace:*
-        version: link:../locale
-      '@turbo/gen':
-        specifier: ^1.12.5
-        version: 1.12.5(@types/node@20.11.30)(typescript@4.9.5)
-      '@types/node':
-        specifier: ^20.11.30
-        version: 20.11.30
-      '@types/react':
-        specifier: ^18.2.67
-        version: 18.2.67
-      '@types/react-dom':
-        specifier: ^18.2.22
-        version: 18.2.22
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig

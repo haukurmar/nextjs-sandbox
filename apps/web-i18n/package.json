@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@app/web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,13 +12,13 @@
     "@app/locale": "workspace:*",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
-    "@noba/users": "workspace:*",
-    "@noba/web-layout": "workspace:*",
+    "@app/users": "workspace:*",
+    "@app/layout": "workspace:*",
     "geist": "^1.2.2",
     "next-i18n-router": "^5.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "@app/ui": "workspace:*"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

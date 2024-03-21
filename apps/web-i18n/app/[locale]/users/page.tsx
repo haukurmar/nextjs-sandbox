@@ -1,4 +1,4 @@
-import { UserList } from "@noba/users";
+import { UserList } from "@app/users";
 import { Suspense } from "react";
 
 export default function HomePage() {
