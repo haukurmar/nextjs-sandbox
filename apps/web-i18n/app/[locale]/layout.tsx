@@ -10,7 +10,7 @@ import {
 	HomeIcon,
 	UsersIcon,
 } from "@heroicons/react/24/outline";
-import { dir, i18nConfig, i18nNamespaces, initTranslations, TranslationsProvider } from "@app/locale";
+import { dir, i18nConfig, i18nNamespaces, initTranslations, TranslationsProvider } from "@app/locale-i18n";
 
 export const metadata: Metadata = {
 	title: "Create Turborepo",

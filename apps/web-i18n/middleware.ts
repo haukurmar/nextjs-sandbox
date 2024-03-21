@@ -1,5 +1,5 @@
 import { i18nRouter } from "next-i18n-router";
-import { i18nConfig } from "@app/locale";
+import { i18nConfig } from "@app/locale-i18n";
 
 export function middleware(request) {
 	return i18nRouter(request, i18nConfig);

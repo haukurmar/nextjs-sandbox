@@ -10,7 +10,7 @@ export const initTranslations = async (locale, namespaces, i18nInstance, resourc
 
 	if (!resources) {
 		i18nInstance.use(
-			resourcesToBackend((language, namespace) => import(`./assets/locales/${language}/${namespace}.json`)),
+			resourcesToBackend((language, namespace) => import(`@app/assets/locales/${language}/${namespace}.json`)),
 		);
 	}
 

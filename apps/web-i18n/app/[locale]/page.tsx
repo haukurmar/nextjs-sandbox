@@ -1,9 +1,7 @@
 import Link from "next/link";
-import { initTranslations } from "@app/locale";
+import { i18nNamespaces, initTranslations } from "@app/locale-i18n";
 import { Greetings } from "../../components";
 import * as React from "react";
-
-const i18nNamespaces = ["common", "home"];
 
 export default async function HomePage({ params: { locale } }): Promise<JSX.Element> {
 	const { t } = await initTranslations(locale, i18nNamespaces, null, null);

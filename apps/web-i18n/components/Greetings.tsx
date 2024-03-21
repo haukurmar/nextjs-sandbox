@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslation } from "@app/locale";
+import { useTranslation } from "@app/locale-i18n";
 
 type GreetingsProps = {};
 

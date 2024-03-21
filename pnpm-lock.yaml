@@ -27,9 +27,9 @@ importers:
       '@app/layout':
         specifier: workspace:*
         version: link:../../packages/layout
-      '@app/locale':
+      '@app/locale-i18n':
         specifier: workspace:*
-        version: link:../../packages/locale
+        version: link:../../packages/locale-i18n
       '@app/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -83,6 +83,18 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
 
+  packages/assets:
+    devDependencies:
+      i18nexus-cli:
+        specifier: ^3.3.0
+        version: 3.3.0
+      tsconfig:
+        specifier: workspace:*
+        version: link:../tsconfig
+      typescript:
+        specifier: ^4.9.5
+        version: 4.9.5
+
   packages/layout:
     dependencies:
       '@headlessui/react':
@@ -98,9 +110,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@app/locale':
+      '@app/locale-i18n':
         specifier: workspace:*
-        version: link:../locale
+        version: link:../locale-i18n
       '@turbo/gen':
         specifier: ^1.12.5
         version: 1.12.5(@types/node@20.11.30)(typescript@4.9.5)
@@ -120,8 +132,11 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
 
-  packages/locale:
+  packages/locale-i18n:
     dependencies:
+      '@app/assets':
+        specifier: workspace:*
+        version: link:../assets
       i18next:
         specifier: ^23.10.1
         version: 23.10.1
@@ -150,9 +165,6 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.22
         version: 18.2.22
-      i18nexus-cli:
-        specifier: ^3.3.0
-        version: 3.3.0
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig

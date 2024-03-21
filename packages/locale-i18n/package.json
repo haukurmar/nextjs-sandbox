@@ -1,21 +1,19 @@
 {
-  "name": "@app/locale",
+  "name": "@app/locale-i18n",
   "version": "1.0.0",
   "main": "index.ts",
   "types": "./index.ts",
   "license": "MIT",
-  "scripts": {
-    "locale": "i18nexus pull -p assets/locales"
-  },
+  "scripts": {},
   "devDependencies": {
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.67",
     "@types/react-dom": "^18.2.22",
-    "i18nexus-cli": "^3.3.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "@app/assets": "workspace:*",
     "i18next": "^23.10.1",
     "i18next-resources-to-backend": "^1.2.0",
     "next-i18n-router": "^5.3.1",

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@app/locale": "workspace:*",
+    "@app/locale-i18n": "workspace:*",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@app/users": "workspace:*",

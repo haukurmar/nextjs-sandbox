@@ -7,7 +7,7 @@ import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/20/solid"
 import { NavigationItem } from "../webLayoutTypes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LanguageChanger } from "@app/locale";
+import { LanguageChanger } from "@app/locale-i18n";
 
 const teams = [
 	{ id: 1, name: "Heroicons", href: "#", initial: "H" },
