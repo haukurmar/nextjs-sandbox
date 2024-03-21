@@ -1,0 +1,26 @@
+{
+  "name": "@app/locale-next-intl",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {},
+  "files": [
+    "i18n.ts"
+  ],
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.5",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22"
+  },
+  "dependencies": {
+    "@app/assets": "workspace:*",
+    "next-intl": "^3.9.5"
+
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
