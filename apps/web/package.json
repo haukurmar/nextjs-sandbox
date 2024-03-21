@@ -12,7 +12,7 @@
     "@app/locale": "workspace:*",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
-    "@noba/users": "workspace:*",
+    "@app/users": "workspace:*",
     "@noba/web-layout": "workspace:*",
     "geist": "^1.2.2",
     "next-i18n-router": "^5.3.1",

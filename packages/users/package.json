@@ -1,5 +1,5 @@
 {
-  "name": "@noba/users",
+  "name": "@app/users",
   "version": "0.0.0",
   "main": "index.ts",
   "types": "./index.tsx",

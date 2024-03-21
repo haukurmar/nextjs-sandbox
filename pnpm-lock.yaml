@@ -61,15 +61,15 @@ importers:
       '@app/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@app/users':
+        specifier: workspace:*
+        version: link:../../packages/users
       '@headlessui/react':
         specifier: ^1.7.18
         version: 1.7.18(react-dom@18.2.0)(react@18.2.0)
       '@heroicons/react':
         specifier: ^2.1.1
         version: 2.1.1(react@18.2.0)
-      '@noba/users':
-        specifier: workspace:*
-        version: link:../../packages/users
       '@noba/web-layout':
         specifier: workspace:*
         version: link:../../packages/web-layout
