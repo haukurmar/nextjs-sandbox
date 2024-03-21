@@ -55,6 +55,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@app/layout':
+        specifier: workspace:*
+        version: link:../../packages/layout
       '@app/locale':
         specifier: workspace:*
         version: link:../../packages/locale
@@ -70,9 +73,6 @@ importers:
       '@heroicons/react':
         specifier: ^2.1.1
         version: 2.1.1(react@18.2.0)
-      '@noba/web-layout':
-        specifier: workspace:*
-        version: link:../../packages/layout
       geist:
         specifier: ^1.2.2
         version: 1.2.2(next@14.1.4)
