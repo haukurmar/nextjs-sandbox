@@ -1,5 +1,5 @@
 // fetch users
-import { User } from "../userTypes";
+import { User } from "../models";
 
 export const fetchUsers = async (): Promise<User[]> => {
 	const response = await fetch("https://6544eae55a0b4b04436d346e.mockapi.io/users");

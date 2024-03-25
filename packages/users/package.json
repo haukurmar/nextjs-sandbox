@@ -15,5 +15,8 @@
     "react": "^18.2.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.1"
   }
 }

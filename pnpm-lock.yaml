@@ -288,6 +288,10 @@ importers:
         version: 4.9.5
 
   packages/users:
+    dependencies:
+      '@heroicons/react':
+        specifier: ^2.1.1
+        version: 2.1.1(react@18.2.0)
     devDependencies:
       '@turbo/gen':
         specifier: ^1.12.5
