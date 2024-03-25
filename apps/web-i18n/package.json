@@ -9,16 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@app/layout": "workspace:*",
     "@app/locale-i18n": "workspace:*",
+    "@app/ui": "workspace:*",
+    "@app/users": "workspace:*",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
-    "@app/users": "workspace:*",
-    "@app/layout": "workspace:*",
+    "@sentry/nextjs": "^7.105.0",
     "geist": "^1.2.2",
     "next-i18n-router": "^5.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@app/ui": "workspace:*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
