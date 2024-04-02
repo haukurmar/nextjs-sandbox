@@ -7,5 +7,5 @@ export function middleware(request) {
 
 // only applies this middleware to files in the app directory (skipping api, favicon, robots.txt, etc.)
 export const config = {
-	matcher: "/((?!api|static|.*\\..*|_next).*)",
+	matcher: "/((?!api|static|.*\\..*|_next|monitoring).*)",
 };
