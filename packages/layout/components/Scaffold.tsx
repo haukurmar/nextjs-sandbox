@@ -9,11 +9,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LanguageChanger } from "@app/locale-i18n";
 
-const teams = [
-	{ id: 1, name: "Heroicons", href: "#", initial: "H" },
-	{ id: 2, name: "Tailwind Labs", href: "#", initial: "T" },
-	{ id: 3, name: "Workcation", href: "#", initial: "W" },
-];
 const userNavigation = [
 	{ name: "Your profile", href: "#" },
 	{ name: "Sign out", href: "#" },
@@ -118,32 +113,6 @@ export function Scaffold(props: ScaffoldProps) {
 														))}
 													</ul>
 												</li>
-												<li>
-													<div className="text-xs font-semibold leading-6 text-gray-400">
-														Your teams
-													</div>
-													<ul role="list" className="-mx-2 mt-2 space-y-1">
-														{teams.map((team) => (
-															<li key={team.name}>
-																<Link
-																	href={team.href}
-																	className={classNames(
-																		isCurrentRoute(team.href)
-																			? "bg-gray-800 text-white"
-																			: "text-gray-400 hover:text-white hover:bg-gray-800",
-																		"group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold",
-																	)}
-																>
-																	<span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">
-																		{team.initial}
-																	</span>
-																	<span className="truncate">{team.name}</span>
-																	{team.href}
-																</Link>
-															</li>
-														))}
-													</ul>
-												</li>
 												<li className="mt-auto">
 													<a
 														href="#"
@@ -195,29 +164,6 @@ export function Scaffold(props: ScaffoldProps) {
 														{item.icon}
 													</i>
 													{item.name}
-												</Link>
-											</li>
-										))}
-									</ul>
-								</li>
-								<li>
-									<div className="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
-									<ul role="list" className="-mx-2 mt-2 space-y-1">
-										{teams.map((team) => (
-											<li key={team.name}>
-												<Link
-													href={team.href}
-													className={classNames(
-														isCurrentRoute(team.href)
-															? "bg-gray-800 text-white"
-															: "text-gray-400 hover:text-white hover:bg-gray-800",
-														"group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold",
-													)}
-												>
-													<span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">
-														{team.initial}
-													</span>
-													<span className="truncate">{team.name}</span>
 												</Link>
 											</li>
 										))}
@@ -293,7 +239,7 @@ export function Scaffold(props: ScaffoldProps) {
 												className="ml-4 text-sm font-semibold leading-6 text-gray-900"
 												aria-hidden="true"
 											>
-												Tom Cook
+												Haukur Mar Bödvarsson
 											</span>
 											<ChevronDownIcon
 												className="ml-2 h-5 w-5 text-gray-400"
