@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@app/errors": "workspace:*",
     "@app/layout": "workspace:*",
     "@app/locale-i18n": "workspace:*",
     "@app/ui": "workspace:*",

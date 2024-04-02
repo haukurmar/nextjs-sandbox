@@ -1,5 +1,5 @@
 {
-  "name": "@app/users",
+  "name": "@app/errors",
   "version": "0.0.0",
   "main": "index.ts",
   "types": "./index.tsx",
@@ -7,16 +7,19 @@
   "scripts": {
     "generate:component": "turbo gen react-component"
   },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "@app/ui": "workspace:*"
+  },
   "devDependencies": {
-    "@turbo/gen": "^1.12.5",
-    "@types/node": "^20.11.30",
     "@types/react": "^18.2.67",
     "@types/react-dom": "^18.2.22",
     "react": "^18.2.0",
     "tsconfig": "workspace:*",
     "typescript": "^4.9.5"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@heroicons/react": "^2.1.1"
   }
 }
