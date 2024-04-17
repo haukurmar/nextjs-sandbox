@@ -3,19 +3,22 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky",
+    "release": "turbo release --concurrency=1"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
     "tsconfig": "workspace:*",
     "turbo": "^1.12.5"
   },
-  "packageManager": "pnpm@8.6.10",
+  "packageManager": "^pnpm@8.0.0",
   "name": "nextjs-sandbox",
   "dependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
     "husky": "^9.0.11",
-    "next": "^14.1.4"
+    "next": "^14.1.4",
+    "release-it": "^17.2.0"
   }
 }

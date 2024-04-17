@@ -5,9 +5,11 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "generate:component": "turbo gen react-component"
+    "generate:component": "turbo gen react-component",
+    "release": "release-it --ci --dry-run"
   },
   "devDependencies": {
+    "@app/config-release-it": "workspace:*",
     "@turbo/gen": "^1.12.5",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.67",
