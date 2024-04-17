@@ -1,0 +1,12 @@
+#!/bin/sh
+# This script is a Husky hook that is triggered after the commit message is finalized but before the commit is completed.
+# It uses commitlint to validate that the commit message follows the defined conventions.
+
+# Load Husky's script from its internal library to ensure it functions properly.
+. "$(dirname "$0")/_/husky.sh"
+
+# Run commitlint to check the commit message. The '--edit $1' parameter points to the temporary file
+# containing the commit message written by the user.
+# 'npx --no-install' ensures commitlint is executed without trying to reinstall it each time.
+# This check must pass, or the commit will be aborted.
+npx --no-install commitlint --edit $1

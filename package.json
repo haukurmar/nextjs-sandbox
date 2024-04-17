@@ -13,6 +13,9 @@
   "packageManager": "pnpm@8.6.10",
   "name": "nextjs-sandbox",
   "dependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.11",
     "next": "^14.1.4"
   }
 }
