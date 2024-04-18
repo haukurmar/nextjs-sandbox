@@ -11,8 +11,6 @@ export function Card({
 	children: React.ReactNode;
 	href: string;
 }): JSX.Element {
-	console.log("Card rendered");
-
 	return (
 		<a
 			className={className}
