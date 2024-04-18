@@ -1,6 +1,6 @@
 {
   "name": "@app/config-release-it",
-  "version": "0.2.0-beta.0",
+  "version": "0.2.0-feature-release-it.0",
   "license": "MIT",
   "main": ".release-it.js",
   "exports": {
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "release": "release-it --ci",
-    "release:beta": "release-it --config .release-it-prerelease.js --ci"
+    "release:beta": "release-it --config .release-it-prerelease.js --ci --dry-run"
   },
   "devDependencies": {
     "@b12k/mvm": "0.0.10",
