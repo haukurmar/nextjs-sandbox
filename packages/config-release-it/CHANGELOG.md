@@ -1,5 +1,12 @@
 
 
+## [0.3.1](https://github.com/haukurmar/nextjs-sandbox/compare/@app/config-release-it-v0.3.0...@app/config-release-it-v0.3.1) (2024-04-18)
+
+
+### Bug Fixes
+
+* **config-release-it:** correct casing of strictSemVer ([80dee76](https://github.com/haukurmar/nextjs-sandbox/commit/80dee76d54c34a1678174c67f540889f11abe3fa))
+
 ## [0.3.0](https://github.com/haukurmar/nextjs-sandbox/compare/@app/config-release-it-v0.2.1...@app/config-release-it-v0.3.0) (2024-04-18)
 
 
