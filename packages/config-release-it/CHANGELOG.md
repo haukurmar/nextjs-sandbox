@@ -1,5 +1,12 @@
 
 
+## [0.2.1](https://github.com/haukurmar/nextjs-sandbox/compare/@app/config-release-it-v0.2.0...@app/config-release-it-v0.2.1) (2024-04-18)
+
+
+### Bug Fixes
+
+* **config-release-it:** added strict semver for changelog ([07b7a04](https://github.com/haukurmar/nextjs-sandbox/commit/07b7a0426869a97d945bdd1fb9f240f1ab47a041))
+
 ## 0.2.0 (2024-04-18)
 
 
