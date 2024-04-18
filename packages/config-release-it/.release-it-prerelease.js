@@ -9,8 +9,6 @@ const getPreReleaseTag = () => {
 
 const preRelease = getPreReleaseTag();
 
-console.log("baseFile", baseFile);
-
 module.exports = {
 	plugins: { ...baseFile.plugins },
 	preRelease: preRelease,

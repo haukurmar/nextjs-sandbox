@@ -8,6 +8,7 @@ module.exports = {
 			path: ".",
 			infile: "CHANGELOG.md",
 			preset: "conventionalcommits",
+			strictSemver: true,
 			gitRawCommitsOpts: {
 				path: ".",
 			},
