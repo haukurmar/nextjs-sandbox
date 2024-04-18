@@ -24,10 +24,22 @@ module.exports = {
 		commitMessage: `feat(${scope}): released version v${version} [no ci]`,
 		requireCommits: true,
 		requireCommitsFail: false,
+		requireBranch: [
+			"main",
+			"master",
+			"feature/*",
+			// { name: "beta", prerelease: true },
+			// { name: "next", prerelease: true },
+			// { name: "feature/*", prerelease: "${name.replace(/\\//, '-')}" },
+			// { name: "fix/*", prerelease: "${name.replace(/\\//, '-')}" },
+		],
 	},
 	npm: {
-		publish: false,
+		publish: true,
 		versionArgs: ["--workspaces false"],
+
+		// To ignore the version from package.json, (and use the latest Git tag instead):
+		//ignoreVersion: true
 	},
 	github: {
 		release: true,
