@@ -1,5 +1,17 @@
 
 
+## [0.3.0](https://github.com/haukurmar/nextjs-sandbox/compare/@app/ui-v0.2.0...@app/ui-v0.3.0) (2024-04-18)
+
+
+### Features
+
+* **ui:** released version v0.3.0-feature-some-ui-feature.0 [no ci] ([b984201](https://github.com/haukurmar/nextjs-sandbox/commit/b984201330ade9bba4fddf3dd46367cf9554e06f))
+
+
+### Bug Fixes
+
+* **ui:** removed console log ([39e6af7](https://github.com/haukurmar/nextjs-sandbox/commit/39e6af7ddaa2b1decd0aca601ffc61c041a318a5))
+
 ## 0.3.0-feature-some-ui-feature.0 (2024-04-18)
 
 
