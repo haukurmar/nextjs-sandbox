@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "generate:component": "turbo gen react-component",
-    "release": "release-it --ci"
+    "release": "release-it --ci",
+    "release:beta": "release-it --ci --preRelease=beta"
   },
   "devDependencies": {
     "@app/config-release-it": "workspace:*",
