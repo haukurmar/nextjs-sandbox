@@ -9,7 +9,7 @@
   },
   "scripts": {
     "release": "release-it --ci",
-    "release:beta": "release-it --config .release-it-prerelease.js --ci --dry-run"
+    "release:beta": "release-it --config .release-it-prerelease.js --ci"
   },
   "devDependencies": {
     "@b12k/mvm": "0.0.10",
