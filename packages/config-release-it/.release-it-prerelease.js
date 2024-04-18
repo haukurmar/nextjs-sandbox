@@ -16,7 +16,7 @@ module.exports = {
 	preRelease: preRelease,
 	git: {
 		...baseFile.git,
-		tagName: `${packageName}-v${preRelease}`,
+		tagName: `${packageName}-v-${preRelease}`,
 		requireBranch: ["beta", "next", "feature/*", "fix/*"],
 	},
 	npm: {
