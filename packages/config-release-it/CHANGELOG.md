@@ -1,5 +1,12 @@
 
 
+## [0.3.0](https://github.com/haukurmar/nextjs-sandbox/compare/@app/config-release-it-v0.2.1...@app/config-release-it-v0.3.0) (2024-04-18)
+
+
+### Features
+
+* **config-release-it:** released version v0.3.0-feature-some-ui-feature.0 [no ci] ([730e06a](https://github.com/haukurmar/nextjs-sandbox/commit/730e06a4a50da59eaa32528064361720807729a4))
+
 ## 0.3.0-feature-some-ui-feature.0 (2024-04-18)
 
 
