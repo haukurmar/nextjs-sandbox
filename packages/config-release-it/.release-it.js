@@ -21,7 +21,7 @@ module.exports = {
 		// to force using ssh instead of https in order to push back package.json version bumps and updated mvm.lock and CHANGELOG.md files.
 		// pushRepo: "git@github.com:haukurmar/nextjs-sandbox.git",
 		commitsPath: ".",
-		commitMessage: `feat(${scope}): released version v${version} [no ci]`,
+		commitMessage: `chore(release): ${scope} v${version} [skip ci]`,
 		requireCommits: true,
 		requireCommitsFail: false,
 		requireBranch: [
