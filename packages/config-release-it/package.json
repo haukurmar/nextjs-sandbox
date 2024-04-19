@@ -1,6 +1,6 @@
 {
   "name": "@app/config-release-it",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": "MIT",
   "main": ".release-it.js",
   "exports": {

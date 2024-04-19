@@ -1,5 +1,7 @@
 # Changelog for @app/config-release-it
 
+## [0.3.2](https://github.com/haukurmar/nextjs-sandbox/compare/@app/config-release-it-v0.3.2...@app/config-release-it-vnull) (2024-04-19)
+
 ## [0.3.2](https://github.com/haukurmar/nextjs-sandbox/compare/@app/config-release-it-v0.3.1...@app/config-release-it-v0.3.2) (2024-04-19)
 
 
