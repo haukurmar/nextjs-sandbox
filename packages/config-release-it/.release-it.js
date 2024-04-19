@@ -5,6 +5,7 @@ const scope = packageName.split("/")[1];
 module.exports = {
 	plugins: {
 		"@release-it/conventional-changelog": {
+			header: `# Changelog for ${packageName}`,
 			path: ".",
 			infile: "CHANGELOG.md",
 			preset: "conventionalcommits",
