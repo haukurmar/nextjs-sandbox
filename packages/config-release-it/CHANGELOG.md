@@ -1,4 +1,11 @@
+# Changelog for @app/config-release-it
 
+## [0.3.2](https://github.com/haukurmar/nextjs-sandbox/compare/@app/config-release-it-v0.3.1...@app/config-release-it-v0.3.2) (2024-04-19)
+
+
+### Bug Fixes
+
+* **config-release-it:** removed strictSemVer ([a99ece1](https://github.com/haukurmar/nextjs-sandbox/commit/a99ece1087120de2bcfb5195cc4bafa378bfac82))
 
 ## [0.3.1](https://github.com/haukurmar/nextjs-sandbox/compare/@app/config-release-it-v0.3.0...@app/config-release-it-v0.3.1) (2024-04-18)
 
