@@ -8,8 +8,8 @@
     "./pre-release": "./.release-it-prerelease.js"
   },
   "scripts": {
-    "release": "release-it --ci",
-    "release:beta": "release-it --config .release-it-prerelease.js --ci"
+    "release": "release-it --ci --",
+    "release:beta": "release-it --config .release-it-prerelease.js --ci --"
   },
   "devDependencies": {
     "@b12k/mvm": "0.0.10",
