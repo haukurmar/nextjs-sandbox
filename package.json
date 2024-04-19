@@ -6,7 +6,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky",
     "release": "turbo release --concurrency=1 --",
-    "release:pre-release": "turbo release:beta --concurrency=1 --"
+    "release:pre-release": "turbo release:beta --concurrency=1"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
