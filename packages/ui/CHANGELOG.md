@@ -1,4 +1,6 @@
+# Changelog for @app/ui
 
+## [0.3.0](https://github.com/haukurmar/nextjs-sandbox/compare/@app/ui-v0.3.0...@app/ui-vnull) (2024-04-19)
 
 ## [0.3.0](https://github.com/haukurmar/nextjs-sandbox/compare/@app/ui-v0.2.0...@app/ui-v0.3.0) (2024-04-18)
 
