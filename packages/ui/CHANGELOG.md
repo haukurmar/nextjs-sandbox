@@ -1,5 +1,12 @@
 # Changelog for @app/ui
 
+## [0.4.0](https://github.com/haukurmar/nextjs-sandbox/compare/@app/ui-v-feature-release-config...@app/ui-v0.4.0) (2024-04-22)
+
+
+### Features
+
+* **ui:** changed to h3 ([fc8267a](https://github.com/haukurmar/nextjs-sandbox/commit/fc8267a850ef570980990e3e131b432fabe8219f))
+
 ## 0.4.0-feature-release-config.0 (2024-04-22)
 
 
