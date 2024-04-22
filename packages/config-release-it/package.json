@@ -1,15 +1,15 @@
 {
   "name": "@app/config-release-it",
-  "version": "0.3.3",
+  "version": "0.4.0-feature-release-config.0",
   "license": "MIT",
-  "main": ".release-it.js",
+  "main": "release.config.js",
   "exports": {
-    ".": "./.release-it.js",
-    "./pre-release": "./.release-it-prerelease.js"
+    ".": "./release.config.js",
+    "./pre-release": "./pre-release.config.js"
   },
   "scripts": {
-    "release": "release-it --ci --",
-    "release:beta": "release-it --config .release-it-prerelease.js --ci --"
+    "release": "release-it --config ./release.config.js --ci",
+    "release:pre-release": "release-it --config ./pre-release.config.js --ci"
   },
   "devDependencies": {
     "@b12k/mvm": "0.0.10",

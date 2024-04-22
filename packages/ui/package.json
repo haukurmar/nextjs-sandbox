@@ -1,13 +1,13 @@
 {
   "name": "@app/ui",
-  "version": "0.3.1",
+  "version": "0.4.0-feature-release-config.0",
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
     "generate:component": "turbo gen react-component",
-    "release": "release-it --ci --",
-    "release:beta": "release-it --ci --config .release-it-prerelease.js --"
+    "release": "release-it --config ./release.config.js --ci",
+    "release:pre-release": "release-it --config ./pre-release.config.js --ci"
   },
   "devDependencies": {
     "@app/config-release-it": "workspace:*",

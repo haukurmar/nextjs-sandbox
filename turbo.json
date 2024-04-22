@@ -16,7 +16,7 @@
       "outputMode": "new-only"
     },
     "release:pre-release": {
-      "dependsOn": ["^release:beta"],
+      "dependsOn": ["^release:pre-release"],
       "outputMode": "new-only"
     }
   }
